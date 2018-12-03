@@ -1,0 +1,178 @@
+.clearfix::after{display: block;height: 0;clear: both;content: ''}
+/* 日历 */
+.date_section{
+  background:#fff;
+  border-top:2rpx solid #F5F5F5;
+  border-bottom:2rpx solid #F5F5F5;
+}
+.yesterday_box{
+  padding:12rpx 0 20rpx 20rpx;
+  float:left;
+}
+.yesterday_img{
+  width:17rpx;
+  vertical-align:middle;
+  margin-right:12rpx;
+}
+.yesterday_box>view{
+  display:inline-block;
+  color:#333333;
+  font-size:24rpx;
+}
+.display_date{
+  color:#333333;
+  font-size:28rpx;
+  font-weight:bold;
+  padding-top:24rpx;
+  padding-left:200rpx;
+  float:left;
+}
+.tomorrow_box{
+  padding:12rpx 20rpx 20rpx 0;
+  float:right;
+}
+.tomorrow_img{
+  width:17rpx;
+  vertical-align:middle;
+  margin-left:12rpx;
+}
+.tomorrow_box>view{
+  display:inline-block;
+  color:#333333;
+  font-size:24rpx;
+}
+/* 营业 */
+.business_section{
+  background:#fff;
+  padding-top:54rpx;
+}
+.income_section{
+  text-align:center;
+}
+.income_key{
+  color:#999;
+  font-size:28rpx;
+}
+.income_val{
+  color:#60A3FE;
+  font-size:80rpx;
+  font-weight:800;
+  padding-left:-60rpx;
+}
+.income_val>text{
+  font-size:60rpx;
+}
+/* 体验 */
+.experience_section{
+  position:relative;
+  padding-bottom:74rpx;
+  border-bottom:16rpx solid #F5F5F5;
+}
+.experience_bg{
+  width:100%;
+}
+.card_section{
+  padding:0 25rpx;
+  position:absolute;
+  top:80rpx;
+}
+.card_num,.experience_num{
+  display:inline-block;
+  width:320rpx;
+  height:188rpx;
+  background:#fff;
+  margin:0 15rpx;
+  box-shadow:0rpx 2rpx 6rpx 0rpx rgba(94,163,254,1);
+  border-radius:10rpx;
+  position:relative;
+}
+.card_key,.experience_key{
+  color:#5EA3FE;
+  font-size:28rpx;
+  border-left:4rpx solid #5EA3FE;
+  padding-left:20rpx;
+  margin:28rpx 0 28rpx 0;
+}
+.card_val,.experience_val{
+  color:#5EA3FE;
+  font-size:50rpx;
+  padding-left:25rpx;
+}
+.card_val>text,.experience_val>text{
+  font-size:30rpx;
+}
+.fish_img{
+  width:104rpx;
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+/* 占比 */
+.proportion_key{
+  color:#333333;
+  font-size:32rpx;
+  border-left:4rpx solid #5EA3FE;
+  padding-left:20rpx;
+  margin:30rpx 0 28rpx 0;
+}
+/* canvas部分  */
+.wrap{
+  width: 100%;
+  overflow: hidden;
+}
+.circle-box {
+  text-align: center;
+  height: 350rpx;
+  position:relative;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+.money_text{
+  position: relative;
+}
+.draw_text {
+  position: absolute;
+  top: 110rpx;
+  right: 0;
+  left: 0;
+  margin: auto;
+  font-size:100rpx;
+  font-weight:800;
+  color:#545454;  
+}
+.draw_text view{
+  display:inline-block;
+}
+.draw_text view>text{
+  font-size: 28rpx;
+}
+.draw_text view>image{
+  display:block;
+  width:34rpx;
+  position:absolute;
+  top:31rpx;
+}
+.percent{
+  font-size: 28rpx;
+  color: #999999;
+}
+
+
+/* 休息日 */
+.no_business_section{
+  padding-top:340rpx;
+  text-align:center;
+}
+.no_data{
+  width:232rpx;
+}
+.no_data_text{
+  color:#CDCDCD;
+  font-size:36rpx;
+}

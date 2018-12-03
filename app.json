@@ -1,0 +1,38 @@
+{
+  "pages":[
+    
+    "pages/index/index",
+    "pages/login/login",
+    "pages/jump/jump"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#C2C2C3",
+    "selectedColor": "#5EA3FE",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "assets/img/tabbar-daily-active.png",
+        "iconPath": "assets/img/tabbar-daily.png",
+        "pagePath": "pages/index/index",
+        "text": "日报"
+      },
+      {
+        "selectedIconPath": "assets/img/tabbar-marketing-active.png",
+        "iconPath": "assets/img/tabbar-marketing.png",
+        "pagePath": "pages/jump/jump",
+        "text": "营销"
+      }
+    ]
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx476ee2da58070fe8"
+  ]
+}

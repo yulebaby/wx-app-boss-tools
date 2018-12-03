@@ -1,0 +1,19 @@
+page{
+  height:100vh;
+  background:#F5F5F5;
+}
+.prompt_text{
+  color:#CDCDCD;
+  font-size:36rpx;
+  text-align:center;
+  margin:360rpx 0 210rpx 0;
+}
+.jump_btn{
+  width:474rpx;
+  height:80rpx;
+  color:#fff;
+  background:#5EA3FE;
+  border-radius:60rpx;
+  line-height:80rpx;
+
+}

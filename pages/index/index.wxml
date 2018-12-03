@@ -1,0 +1,60 @@
+<!-- 日历 -->
+<view class='date_section clearfix'>
+  <view class="yesterday_box" bindtap='getYesterday'>
+    <image src='../../assets/img/yesterday.png' mode='widthFix' class='yesterday_img'></image>
+    <view>前一天</view>
+  </view>
+  <view class='display_date'>{{daily_date}}</view>
+  <view class="tomorrow_box" bindtap='getTomorrow' wx:if="{{or_display_tomorrow}}">
+    <view>后一天</view>
+    <image src='../../assets/img/tomorrow.png' mode='widthFix' class='tomorrow_img'></image>
+  </view>
+</view>
+<!-- 营业 -->
+<view class='business_section'>
+  <view class='income_section'>
+    <view class='income_key'>今日收入</view>
+    <view class='income_val'><text>￥</text>{{income}}</view>
+  </view>
+  <view class='experience_section'>
+    <image src='../../assets/img/experience_bg.png' mode='widthFix' class='experience_bg'></image>
+    <view class='card_section'>
+      <view class='card_num'>
+        <view class="card_key">今日办卡</view>
+        <view class="card_val">{{card_num}}<text>张</text></view>
+        <image src='../../assets/img/fish.png' mode='widthFix' class='fish_img'></image>
+      </view>
+      <view class='experience_num'>
+        <view class="experience_key">今日新体验</view>
+        <view class="experience_val">{{experienceCount}}<text>人</text></view>
+        <image src='../../assets/img/fish.png' mode='widthFix' class='fish_img'></image>
+      </view>
+    </view>
+  </view>
+  <view class='proportion'>
+    <view class="proportion_key">今日到店新体验会员占比</view>
+
+    <view class='wrap'>
+      <view class="circle-box">
+        <canvas class="circle" style="z-index: 0; width:350rpx; height:350rpx;" canvas-id="canvasCircle"></canvas>
+        <canvas class="circle" style="width:350rpx; height:350rpx;" canvas-id="canvasArcCir"></canvas>
+        <canvas class="circle" style="width:350rpx; z-index:9; height:350rpx;" canvas-id="canvasArcpos"></canvas>        
+        <view class="draw_text">
+            <view class='money_text'>{{precent}}<view>
+                <image src='{{compare}}' mode='widthFix'></image>
+                <text>%</text>
+              </view>
+            </view>
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+</view>
+<!-- 休息日 -->
+<!-- <view class='no_business_section'>
+  <image src='../../assets/img/no_data.png' mode='widthFix' class='no_data'></image>
+  <view class='no_data_text'>休息日</view>
+</view> -->

@@ -1,0 +1,20 @@
+<view>
+  <image src='../../assets/img/logo_bg.png' mode='widthFix' class='logo_bg'></image>
+  <view class='logo_section'>
+    <image src='../../assets/img/logo.png' mode='widthFix' class='logo'></image>
+    <image src='../../assets/img/logo_text.png' mode='widthFix' class='logo_text'></image>
+  </view>
+</view>
+<view class="form">
+  <view class='account_section'>
+    <image src='../../assets/img/account_icon.png' mode='widthFix' class='account_icon'></image>
+    <input placeholder='请输入ERP账号' class='account' bindinput='accountInput'></input>
+  </view>
+  <view class='error'>{{accountError}}</view>
+  <view class='pwd_section'>
+    <image src='../../assets/img/pwd_icon.png' mode='widthFix' class='pwd_icon'></image>
+    <input type='password' placeholder='请输入ERP密码' class='pwd' bindinput='pwdInput'></input>
+  </view>
+  <view class='error'>{{pwdError}}</view>
+  <button class='login_btn' bindtap='login'>登录</button>
+</view>

@@ -1,0 +1,2 @@
+<view class="prompt_text">自动生成您的专属海报</view>
+<button class='jump_btn' bindtap='jump'>点我生成海报</button>
